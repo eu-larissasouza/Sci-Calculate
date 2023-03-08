@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Larissa Souza" />
+    <title>//Basic Scientific Calculator</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h2>&lt;//Larissa Souza&gt;</h2>
+        </header>
+
+        <table class="sci-calc">
+            <thead class="result">
+                <td colspan="5">
+                    <input id="output" type="text" placeholder="0" readonly="readonly" />
+                </td>
+            </thead>
+
+            <tbody class="btns">
+                <tr class="row">
+                    <td><button id="ac" onclick="allclear()">AC</button></td>
+                    <td><button id="ce" onclick="backspc()">CE</button></td>
+                    <td><button onclick="pow()">x²</button></td>
+                    <td><button onclick="pi()">π</button></td>
+                    <td><button class="btn" id="divide">&divide;</button></td>
+                </tr>
+
+                <tr class="row">
+                    <td><button class="btn">7</button></td>
+                    <td><button class="btn">8</button></td>
+                    <td><button class="btn">9</button></td>
+                    <td><button onclick="fact()">x!</button></td>
+                    <td><button id="times" class="btn">&times;</button></td>
+                </tr>
+
+                <tr class="row">
+                    <td><button class="btn">4</button></td>
+                    <td><button class="btn">5</button></td>
+                    <td><button class="btn">6</button></td>
+                    <td><button onclick="cos()">cos</button></td>
+                    <td><button id="subt" class="btn">-</button></td>
+                </tr>
+
+                <tr class="row">
+                    <td><button class="btn">1</button></td>
+                    <td><button class="btn">2</button></td>
+                    <td><button class="btn">3</button></td>
+                    <td><button onclick="sin()">sin</button></td>
+                    <td><button id="sum" class="btn">+</button></td>
+                </tr>
+
+                <tr class="row">
+                    <td><button class="btn">.</button></td>
+                    <td><button class="btn">0</button></td>
+                    <td><button onclick="e()">e</button></td>
+                    <td><button onclick="tan()">tan</button></td>
+                    <td>
+                        <button onclick="sqrt()"><img src="assets/radius.png" /></button>
+                    </td>
+                </tr>
+
+                <tr class="row">
+                    <td><button class="btn">(</button></td>
+                    <td><button class="btn">)</button></td>
+                    <td><button onclick="log()">log</button></td>
+                    <td colspan="2">
+                        <button id="eval" onclick="compute()">=</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background-image: url(../assets/geometric-background.png);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.75rem 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #282828;
+}
+
+.sci-calc {
+    background-color: #ebecf0;
+    margin-top: 4.25rem;
+    padding: 1rem;
+    padding-left: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 12px 0 rgb(0 0 0 / 20%);
+}
+
+td {
+    padding: 0.5rem;
+    padding-left: 0.875rem;
+}
+
+.row button {
+    font-weight: 600;
+    width: 42px;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    transition: 0.1s;
+    box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffff;
+}
+
+.row button:hover {
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, 0.1), inset -5px -5px 8px #fff;
+    background: #fff;
+}
+
+.result #output {
+    margin-bottom: 0.5em;
+    width: 19rem;
+    height: 60px;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding: 0 0.5em;
+    background: #ecedf3;
+    border-radius: 0.5rem;
+    box-shadow: inset 5px 5px 5px #d1d1d1, inset -5px -5px 5px #f2f2f5;
+}
+
+#eval {
+    background: #214de9;
+    color: #fff;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#eval:hover {
+    box-shadow: inset 5px 5px 8px #1830a8, inset -5px -5px 8px #214de9;
+}
+
+#ac {
+    background: #1cb61c;
+    color: #fff;
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #098a09, inset -5px -5px 8px #1cb61c;
+}
+
+#ce {
+    background: #f1354b;
+    color: #fff;
+}
+
+#ce:hover {
+    box-shadow: inset 5px 5px 8px #e00538, inset -5px -5px 8px #f1354b;
+}
+
+#divide {
+    font-size: 1.25rem;
+    background-color: #20b2aa;
+}
+
+#divide:hover {
+    box-shadow: inset 5px 5px 8px #0d817b, inset -5px -5px 8px #20b2aa;
+}
+
+#times {
+    font-size: 1.25rem;
+    background-color: #ffa500;
+}
+
+#times:hover {
+    box-shadow: inset 5px 5px 8px #d48a00, inset -5px -5px 8px #ffa500;
+}
+
+#subt {
+    font-size: 1.25rem;
+    background-color: #f08080;
+}
+
+#subt:hover {
+    box-shadow: inset 5px 5px 8px #db5353, inset -5px -5px 8px #f08080;
+}
+
+#sum {
+    font-size: 1.25rem;
+    background-color: #7d93e0;
+}
+
+#sum:hover {
+    box-shadow: inset 5px 5px 8px #4e6bd3, inset -5px -5px 8px #7d93e0;
+}
